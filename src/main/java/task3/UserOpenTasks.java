@@ -10,13 +10,13 @@ import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
+
 
 
 public class UserOpenTasks {
     public static void main(String[] args) throws IOException {
         Scanner scannerUserId = new Scanner(System.in);
-        System.out.println("Введіть id користувача пости якого бажаєте отримати:");
+        System.out.println("Введіть id користувача незавершені задачі якого бажаєте отримати:");
         int userId = scannerUserId.nextInt();
         String urlTodos = "https://jsonplaceholder.typicode.com/users/" + userId + "/todos";
         scannerUserId.close();
